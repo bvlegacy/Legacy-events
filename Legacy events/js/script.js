@@ -29,13 +29,13 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+    
+    if (href !== "#" && href.startsWith("https") {
+        window.open(href, "_blank");
+    }
 
     if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
-    }
-    
-    else {
-      window.open(href, "_blank");
     }
   });
 });
