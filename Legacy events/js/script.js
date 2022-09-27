@@ -33,6 +33,10 @@ allLinks.forEach(function (link) {
     if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
     }
+    
+    else {
+      window.open(href, "_blank");
+    }
   });
 });
 
